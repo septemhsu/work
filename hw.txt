@@ -69,9 +69,31 @@ You may use any language you like; please include your code in the repository an
 
 4 - Questionnaire
 1. How long did you spend answering?
+
+兩小時
+
 2. Which question is the most easy for you? Why?
+
+程式的部分，因為之前有碰過 python，所以還算簡單
+
 3. Which question is the most difficult for you? Why?
+
+docker 的部分，因為之前沒有碰過，所以找資料花了比較多時間
+
 4. Regarding your working style, when coding, do you prefer to work alone or in teams? Same question but when you are doing design and/or research.
+
+寫程式的話沒有特別取向，若想設計或研究的話我傾向一個人，若有問題再與別人討論
+
 5. From what you have surveyed, what aspect of Bridgewell matches you the most? What aspect match you the least?
+
+由於我目前做的東西都是客戶量較小的使用情境，我對於 Bridgewell 需要承受高乘載及分散式的後端服務非常有興趣，
+至於電商這塊需要面對客戶需求較多的我比較沒有興趣
+
+
 6. What kind of contribution you expect to make to Bridgewell?
+
+我覺得我不是一個很聰明很聰明的人，但我是一個負責的人，我會盡力在時限內將工作做完，並將 quality 弄到最好
+
 7. What do you expect to take away from Bridgewell?
+
+我期望我可以學到如何去設計、實作及維護一個分散式的高乘載、及時、穩定、持續服務的後端系統
