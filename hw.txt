@@ -39,6 +39,8 @@ Please explain the functionality of the following two files in Linux operation s
 /etc/hosts
 /etc/resolv.conf
 
+/etc/hosts 裡面存放主機名稱對應 IP 的列表，當要搜尋一台主機時，預設先從 /etc/hosts 找是否有其 IP 位置，若找不到則透過 /etc/resolv.conf 裡面存的 dns 查找。
+
 
 3 - Programming
 Please write a program to read access.log; find out the logs with return code 404; count the occurrence of each IP among these logs and output them in ascending order.
