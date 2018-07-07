@@ -59,6 +59,13 @@ Expected output:
 4 64.71.171.86
 You may use any language you like; please include your code in the repository and teach us how to reproduce your result.
 
+目錄下的 parse.py 可讀取同目錄底下的 access.log，
+因為 access.log 格式固定，所以我直接取從開頭到空白前的字串為 IP，
+再掃到 HTTP version 後面的空白+1的位置，取其到下一個空白前的字串為 response code，
+若 response code 為 404，則從一開始就宣告的 dictionary 裡面看有沒有這個 IP 的 key，
+若沒有則新增其，value 為 1，若有的話將其 value 改成原 value + 1。
+做完之後，取出其 element 的 list，生出 key 和 value 對調的 list，再根據 key 去做排序，最後 output 出來。
+
 
 4 - Questionnaire
 1. How long did you spend answering?
