@@ -17,11 +17,21 @@ docker run \
 	--name test_docker \
 	registry.local.test.com/infra/test_docker:0-17.08.03-caf85b05-rc
 
+這一題是要背景執行 (-d) 一個 docker image registry.local.test.com/infra/test_docker 其 tag 為 0-17.08.03-caf85b05-rc，
+設置其容器名稱為 test_docker (--name test_docker)
+並設置其環境變數加上 TEST_ENV=HELLO_WORLD (-e TEST_ENV=HELLO_WORLD)、
+將主機上的 /etc/localtime 掛載到容器的 /etc/localtime，且其上的檔案對於訪問容器的使用者為 read only (-v /etc/localtime:/etc/localtime:ro)、
+將主機上的 8080 和 5566 port 對應到容器的 80 和 443 port (-p 8080:80, -p 5566:443)、
+設置此容器可以連到 mysql 這個容器，將其別名設為 db (--link mysql:db)、
+設定此容器的 dns server 為 10.0.0.1 和 192.168.0.1 (--dns=10.0.0.1, --dns=192.168.0.1)，
+當在搜索特定主機時，也會多搜尋 local.test.com 和 test.com 這兩個 domain 是否有此主機 (--dns-search=local.test.com, --dns-search=test.com)
+
 1.2
 Please explain this command.
 
 docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
 
+此指令將所有 tag 為 <none> 的 image 刪除
 
 2 - Linux
 Please explain the functionality of the following two files in Linux operation system.
